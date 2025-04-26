@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 408px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(243, 243, 243, 1);
+  border-radius: 5px;
+
+  &__product-image {
+    width: 160px;
+    height: 134px;
+    margin-block: 32px 0;
+    margin-inline: $margin-inline-image;
+    position: relative;
+  }
+
+  &__title {
+    font-family: RobotoMedium, sans-serif;
+    font-size: 12px;
+    color: $main-text-color;
+    line-height: 18px;
+    margin-block: 40px auto;
+    margin-inline: $margin-inline-elements;
+  }
+
+  &__code {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 10px;
+    width: 98px;
+    height: 14px;
+    color: $secondary-text-color;
+    margin-block: 4px auto;
+    margin-inline: $margin-inline-elements;
+  }
+
+  &__review {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 16px;
+    margin-block: 16px 0;
+    margin-inline: $margin-inline-elements;
+
+    &-reviews {
+      font-family: RobotoRegular, sans-serif;
+      font-size: 10px;
+      line-height: 14px;
+      color: $main-text-color;
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    margin-block: 24px 0;
+    margin-inline: $margin-inline-elements;
+
+    &-description {
+      font-family: RobotoRegular, sans-serif;
+      font-size: 12px;
+      line-height: 18px;
+      color: $secondary-text-color;
+    }
+
+    &-value {
+      font-family: RobotoBold, sans-serif;
+      font-size: 16px;
+      line-height: 18px;
+      color: $main-text-color;
+    }
+  }
+
+  &__button {
+    font-family: RobotoBold, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-transform: uppercase;
+
+    height: 40px;
+    background-color: rgba(0, 172, 220, 1);
+    border-radius: 5px;
+    margin-inline: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 16px;
+    margin-inline: $margin-inline-elements;
+
+    transition: all 0.25s ease;
+
+    &:hover {
+      color: rgba(0, 172, 220, 1);
+      background-color: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(0, 172, 220, 1);
+    }
+  }
+}

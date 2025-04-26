@@ -1,0 +1,19 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url('/src/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  src: url('/src/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url('/src/fonts/Roboto-Bold.ttf');
+}
+
+$margin-inline-image: 19px;
+$margin-inline-elements: 16px;
+$main-text-color: rgba(6, 11, 53, 1);
+$secondary-text-color: rgba(97, 96, 112, 1);
